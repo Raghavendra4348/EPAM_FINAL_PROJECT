@@ -13,6 +13,8 @@ public class Module7 {
     WebDriver driver;
 
     By messages = By.xpath("//a[@target='_self']");
+    @FindBy(xpath = "//a[@aria-label='Compose a new message']")
+    WebElement reload;
 
     @FindBy(xpath = "//input[@placeholder='Type a name or multiple names']")
     WebElement searchBox;
@@ -30,6 +32,9 @@ public class Module7 {
 
         List<WebElement> list = driver.findElements(messages);
         list.get(3).click();
+        Thread.sleep(3000);
+
+        reload.click();
         Thread.sleep(3000);
 
         WebElement w = searchBox;

@@ -32,7 +32,7 @@ public class Module3 {
         String b = r.getString("password");
 
         driver.navigate().refresh();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
         user.sendKeys(a);
         Thread.sleep(3000);

@@ -19,12 +19,12 @@ public class Module9 {
         this.driver =driver;
     }
 
-    void logOut() throws InterruptedException {
+    public void logOut() throws InterruptedException {
         MeButton.click();
         Thread.sleep(5000);
 
         logoutButton.click();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 
     }
 

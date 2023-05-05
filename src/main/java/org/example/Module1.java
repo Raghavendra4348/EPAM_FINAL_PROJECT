@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Module1 {
     WebDriver driver;
@@ -18,6 +19,9 @@ public class Module1 {
 
     @FindBy(xpath = "//button[contains(text(),'Sign in')]")
     WebElement login;
+
+    @FindBy(id = "error-for-username")
+    WebElement Empty_Login;
 
     public Module1(WebDriver driver){
         this.driver = driver;
@@ -33,5 +37,10 @@ public class Module1 {
         Thread.sleep(3000);
         login.click();
         Thread.sleep(3000);
+    }
+
+    public WebElement Get_Empty_Login(){
+        WebElement EmptyLog = Empty_Login;
+        return EmptyLog;
     }
 }
