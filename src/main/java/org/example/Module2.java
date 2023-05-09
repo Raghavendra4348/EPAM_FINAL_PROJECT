@@ -21,24 +21,30 @@ public class Module2 {
     @FindBy(xpath = "//button[contains(text(),'Sign in')]")
     WebElement login;
 
-    @FindBy(id = "error-for-password")
-    WebElement Wrong_Login;
+//    @FindBy(id = "error-for-password")
+//    WebElement Wrong_Login;
+
+    By Wrong_Login = By.id("error-for-password");
 
     public Module2(WebDriver driver){
         this.driver = driver;
     }
     public void wrongLogin() throws InterruptedException {
         String email = "Epamproject2023@gmail.com";
-        String password = "EpamsADSD2";
+        String password = "EpamProject3";
         user.sendKeys(email);
         Thread.sleep(3000);
         pass.sendKeys(password);
         Thread.sleep(3000);
         login.click();
+        Thread.sleep(5000);
 
     }
-    public WebElement Get_Wrong_Login(){
-        WebElement WrongLog = Wrong_Login;
+    public WebElement Get_Wrong_Login() throws InterruptedException {
+        WebElement WrongLog = (new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(ExpectedConditions.presenceOfElementLocated(Wrong_Login)));
+        //WebElement WrongLog = Wrong_Login;
+        Thread.sleep(3000);
         return WrongLog;
     }
 }

@@ -12,9 +12,9 @@ import java.util.ResourceBundle;
 
 public class Module3 {
     WebDriver driver;
-//    @FindBy(id = "username")
-//    WebElement user;
-    By user = By.id("username");
+    @FindBy(id = "username")
+    WebElement user;
+    //By user = By.id("username");
 
     @FindBy(id = "password")
     WebElement pass;
@@ -31,16 +31,12 @@ public class Module3 {
         String a = r.getString("email");
         String b = r.getString("password");
 
-        WebElement w = (new WebDriverWait(driver, Duration.ofSeconds(30))
-                .until(ExpectedConditions.presenceOfElementLocated(user)));
 
-        Thread.sleep(10000);
-
-        w.clear();
+        user.clear();
         Thread.sleep(3000);
         pass.clear();
-        w.sendKeys(a);
-//        user.sendKeys(a);
+        Thread.sleep(3000);
+        user.sendKeys(a);
         Thread.sleep(5000);
         pass.sendKeys(b);
         Thread.sleep(5000);

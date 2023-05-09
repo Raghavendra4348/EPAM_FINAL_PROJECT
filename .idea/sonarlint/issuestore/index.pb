@@ -26,3 +26,7 @@ w
 G.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,f\0\f0e0f9cec86fe4b939ae22be5264c758801eb28f
 w
 G.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,e\d\ed67eb178d523a4b3f117dcbe0eda5196367ceec
+V
+&src/main/java/org/example/Module5.java,6\a\6a27f21e0fd2789a58bced7d964cb945b41f15bd
+V
+&src/main/java/org/example/Module1.java,d\6\d66d28d6b262b2887a7bff07aafb2c82a75bda19

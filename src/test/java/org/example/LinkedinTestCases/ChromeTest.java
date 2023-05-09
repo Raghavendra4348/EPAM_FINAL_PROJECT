@@ -88,7 +88,8 @@ public class ChromeTest {
 
         Assert.assertEquals(Empty_Credentials, "Please enter an email address or phone number");
 
-        Assert.assertEquals(Wrong_Credentials,"That's not the right password. Try again or" + "\nsign in with a one-time link");
+        Assert.assertEquals(Wrong_Credentials,"That's not the right password. Try again or\n" +
+                "sign in with a one-time link");
 
     }
 
