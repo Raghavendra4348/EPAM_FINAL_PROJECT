@@ -28,14 +28,13 @@ public class Module2 {
         this.driver = driver;
     }
     public void wrongLogin() throws InterruptedException {
-        String email = "Epam@gmail.com";
-        String password = "Epam2";
+        String email = "Epamproject2023@gmail.com";
+        String password = "EpamsADSD2";
         user.sendKeys(email);
         Thread.sleep(3000);
         pass.sendKeys(password);
         Thread.sleep(3000);
         login.click();
-        Thread.sleep(5000);
 
     }
     public WebElement Get_Wrong_Login(){

@@ -87,7 +87,7 @@ public class EdgeTest {
 
         Assert.assertEquals(Empty_Credentials, "Please enter an email address or phone number");
 
-        Assert.assertEquals(Wrong_Credentials,"The password you provided must have at least 6 characters.");
+        Assert.assertEquals(Wrong_Credentials, "That's not the right password. Try again or" + "\nsign in with a one-time link");
 
     }
 

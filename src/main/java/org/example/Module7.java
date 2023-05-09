@@ -47,7 +47,7 @@ public class Module7 {
         Thread.sleep(4000);
 
         sendMessage.click();
-        Thread.sleep(4000);
+        Thread.sleep(8000);
 
     }
 }
